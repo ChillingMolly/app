@@ -1,0 +1,301 @@
+<DinastieDiKurkScreen>:
+    name: "dinastie_di_kurk"
+
+    BoxLayout:
+        orientation: "vertical"
+        padding: "10dp"
+        spacing: "10dp"
+
+        MDTopAppBar:
+            title: "Le Dinastie di Kurk"
+            elevation: 4
+            left_action_items: [["arrow-left", lambda x: app.change_screen("lore")]]
+
+        ScrollView:
+            MDBoxLayout:
+                orientation: 'vertical'
+                padding: "10dp"
+                spacing: "10dp"
+                size_hint_y: None 
+                height: self.minimum_height 
+                pos_hint: {"center_y": 0.5}
+
+                MDCard:
+                    size_hint: None, None
+                    size: "350dp", "280dp"
+                    pos_hint: {"center_x": 0.5, "center_y": 0.5}
+                    elevation: 6
+                    radius: [15, 15, 15, 15]
+                    md_bg_color: 0.1, 0.1, 0.1, 1
+                    adaptive_height: True
+
+                    MDBoxLayout:
+                        orientation: "vertical"
+                        padding: "15dp"
+                        spacing: "10dp"
+                        adaptive_height: True
+
+                        MDLabel:
+                            text: "La storia del Retaggio del Sangue"
+                            font_name: 'fonts/Belwe Bold.otf'
+                            theme_text_color: "Custom"
+                            text_color: (1, 0.75, 0, 1)  # Colore dorato
+                            font_style: "H5"
+                            halign: "center"
+                            adaptive_height: True
+
+                        MDSeparator:
+                            
+                        MDLabel:
+                            text: "La Fortezza di Kurk è stata governata da una lunga dinastia di clan legati al Bosco di Sangue, il cui potere e legittimità derivano direttamente dalla connessione con il Kurkhael, l'albero sacro al centro della fortezza. Ogni clan che ha governato Kurk ha lasciato il proprio segno, ma tutti condividono un destino comune: la custodia del Sangue della Terra e la protezione del Bosco di Sangue."
+                            font_name: 'fonts/Belwe Italic.ttf'
+                            theme_text_color: "Custom"
+                            text_color: (1, 1, 1, 1)
+                            font_style: "Body1"
+                            adaptive_height: True
+
+                        MDSeparator:
+                            
+                        MDLabel:
+                            text: "La Prima Dinastia: I Figli di Eryndra"
+                            font_name: 'fonts/Belwe Bold.otf'
+                            theme_text_color: "Custom"
+                            text_color: (1, 0.75, 0, 1)  # Colore dorato
+                            font_style: "H5"
+                            halign: "center"
+                            adaptive_height: True
+
+                        MDSeparator:
+                        
+                        MDLabel:
+                            text: "Fondatori e Governati Originari"
+                            font_name: 'fonts/Belwe Bold.otf'
+                            theme_text_color: "Custom"
+                            text_color: (1, 1, 1, 1)
+                            font_style: "Body1"
+                            adaptive_height: True
+                        
+                        MDLabel:
+                            text: "Dopo il sacrificio di Eryndra la Custode, il primo governo di Kurk fu affidato ai suoi discepoli più fidati, che divennero noti come i Figli di Eryndra. Questo clan non era una vera e propria dinastia, ma un consiglio di druidi, guerrieri e studiosi, legati spiritualmente al Kurkhael. Governarono attraverso il consenso e la saggezza, mantenendo un legame diretto con il Bosco di Sangue e stabilendo le prime leggi per proteggerlo."
+                            font_name: 'fonts/Belwe Italic.ttf'
+                            theme_text_color: "Custom"
+                            text_color: (1, 1, 1, 1)
+                            font_style: "Body1"
+                            adaptive_height: True
+
+                        MDSeparator:
+                            
+                        MDLabel:
+                            text: "La Fine della Prima Era"
+                            font_name: 'fonts/Belwe Bold.otf'
+                            theme_text_color: "Custom"
+                            text_color: (1, 1, 1, 1)
+                            font_style: "Body1"
+                            adaptive_height: True
+
+                        MDLabel:
+                            text: "Col passare dei secoli, il consiglio si indebolì a causa di divisioni interne e ambizioni personali. Fu allora che nacque l'idea di un governo centralizzato, con un unico sovrano scelto dal Kurkhael stesso."
+                            font_name: 'fonts/Belwe Italic.ttf'
+                            theme_text_color: "Custom"
+                            text_color: (1, 1, 1, 1)
+                            font_style: "Body1"
+                            adaptive_height: True
+
+                        MDSeparator:
+                            
+                        MDLabel:
+                            text: "La Dinastia dei Redhar: La Dinastia Rossa"
+                            font_name: 'fonts/Belwe Bold.otf'
+                            theme_text_color: "Custom"
+                            text_color: (1, 0.75, 0, 1)  # Colore dorato
+                            font_style: "H5"
+                            halign: "center"
+                            adaptive_height: True
+
+                        MDSeparator:
+                            
+                        MDLabel:
+                            text: "L'Ascesa del Primo Re"
+                            font_name: 'fonts/Belwe Bold.otf'
+                            theme_text_color: "Custom"
+                            text_color: (1, 1, 1, 1)
+                            font_style: "Body1"
+                            adaptive_height: True
+
+                        
+                        MDLabel:
+                            text: "Il Kurkhael scelse come primo Re un guerriero umano, Kaelen Redhar, un membro dei Custodi del Sangue che aveva dimostrato coraggio e dedizione. Kaelen adottò il titolo di Principe del Sangue, legandosi simbolicamente e magicamente all'albero. La sua dinastia fu caratterizzata dalla stabilità: i Redhar costruirono le torri e rafforzarono le mura della fortezza, rendendola inespugnabile."
+                            font_name: 'fonts/Belwe Italic.ttf'
+                            theme_text_color: "Custom"
+                            text_color: (1, 1, 1, 1)
+                            font_style: "Body1"
+                            adaptive_height: True
+
+                        MDSeparator:
+                            
+                        MDLabel:
+                            text: "Eredità e Declino"
+                            font_name: 'fonts/Belwe Bold.otf'
+                            theme_text_color: "Custom"
+                            text_color: (1, 1, 1, 1)
+                            font_style: "Body1"
+                            adaptive_height: True
+
+                        MDLabel:
+                            text: "La Dinastia Rossa governò per quasi tre secoli, ma la sua fine arrivò con il re Theradon il Crudele, che tentò di usare il potere del Kurkhael per conquistare i territori circostanti. Theradon fu ucciso dai suoi stessi guerrieri, segnando la caduta della dinastia e un periodo di instabilità."
+                            font_name: 'fonts/Belwe Italic.ttf'
+                            theme_text_color: "Custom"
+                            text_color: (1, 1, 1, 1)
+                            font_style: "Body1"
+                            adaptive_height: True
+
+                        MDSeparator:
+                                
+                        MDLabel:
+                            text: "La Dinastia dei Sylvalis: Gli Araldi del Bosco"
+                            font_name: 'fonts/Belwe Bold.otf'
+                            theme_text_color: "Custom"
+                            text_color: (1, 0.75, 0, 1)  # Colore dorato
+                            font_style: "H5"
+                            halign: "center"
+                            adaptive_height: True
+
+                        MDSeparator:
+
+                        MDLabel:
+                            text: "L'Interregno e l'Ascesa degli Elfi"
+                            font_name: 'fonts/Belwe Bold.otf'
+                            theme_text_color: "Custom"
+                            text_color: (1, 1, 1, 1)
+                            font_style: "Body1"
+                            adaptive_height: True   
+
+                        MDLabel:
+                            text: "Dopo la caduta dei Redhar, fu un clan elfico, i Sylvalis, a reclamare il trono, sostenendo di avere un legame ancestrale con Eryndra. Sotto il loro governo, la magia della fortezza e del bosco raggiunse nuove vette, e vennero stabilite alleanze con le creature fatate della foresta. Re Lirendel Sylvalis ordinò la creazione delle vetrate magiche che illuminano oggi la Grande Sala."
+                            font_name: 'fonts/Belwe Italic.ttf'
+                            theme_text_color: "Custom"
+                            text_color: (1, 1, 1, 1)
+                            font_style: "Body1"
+                            adaptive_height: True
+
+                        MDSeparator:
+
+                        MDLabel:
+                            text: "Il Crepuscolo dei Sylvalis"
+                            font_name: 'fonts/Belwe Bold.otf'
+                            theme_text_color: "Custom"
+                            text_color: (1, 1, 1, 1)
+                            font_style: "Body1"
+                            adaptive_height: True     
+
+                        MDLabel:
+                            text: "Gli elfi governarono per circa duecento anni, ma la loro fine fu segnata dalla guerra con un clan umano rivale, i Drakmir, che accusavano i Sylvalis di trascurare le necessità militari in favore della magia. La guerra culminò nella Battaglia del Kurkhael, in cui i Sylvalis furono sconfitti, ma non prima di aver maledetto i loro nemici con un incantesimo che li legava al Kurkhael per l'eternità."
+                            font_name: 'fonts/Belwe Italic.ttf'
+                            theme_text_color: "Custom"
+                            text_color: (1, 1, 1, 1)
+                            font_style: "Body1"
+                            adaptive_height: True 
+
+                        MDSeparator:
+
+                        MDLabel:
+                            text: "La Dinastia dei Drakmir: I Custodi d'Acciaio"
+                            font_name: 'fonts/Belwe Bold.otf'
+                            theme_text_color: "Custom"
+                            text_color: (1, 0.75, 0, 1)  # Colore dorato
+                            font_style: "H5"
+                            halign: "center"
+                            adaptive_height: True
+
+                        MDSeparator:
+                            
+                        MDLabel:
+                            text: "I Re Guerrieri"
+                            font_name: 'fonts/Belwe Bold.otf'
+                            theme_text_color: "Custom"
+                            text_color: (1, 1, 1, 1)
+                            font_style: "Body1"
+                            adaptive_height: True   
+
+                        MDLabel:
+                            text: "I Drakmir, un clan umano di guerrieri, presero il potere dopo la caduta degli elfi. Governarono con il pugno di ferro, concentrandosi sulla difesa della fortezza e sull'addestramento militare. Re Gareth Drakmir, noto come il Re d'Acciaio, costruì la Sala delle Armi e stabilì un esercito permanente."
+                            font_name: 'fonts/Belwe Italic.ttf'
+                            theme_text_color: "Custom"
+                            text_color: (1, 1, 1, 1)
+                            font_style: "Body1"
+                            adaptive_height: True   
+
+                        MDSeparator:
+                            
+                        MDLabel:
+                            text: "La Fine della Dinastia"
+                            font_name: 'fonts/Belwe Bold.otf'
+                            theme_text_color: "Custom"
+                            text_color: (1, 1, 1, 1)
+                            font_style: "Body1"
+                            adaptive_height: True  
+
+                        MDLabel:
+                            text: "La maledizione dei Sylvalis si rivelò fatale: i Drakmir iniziarono a perdere la sanità mentale, ossessionati dal potere del Kurkhael. L'ultimo re, Lorath Drakmir, tentò di distruggere l'albero per liberarsi dalla maledizione, ma fu consumato dal Sangue della Terra, ponendo fine alla dinastia."
+                            font_name: 'fonts/Belwe Italic.ttf'
+                            theme_text_color: "Custom"
+                            text_color: (1, 1, 1, 1)
+                            font_style: "Body1"
+                            adaptive_height: True  
+
+                        MDSeparator:
+                            
+                        MDLabel:
+                            text: "La Dinastia degli Elendar: I Sangue Puro"
+                            font_name: 'fonts/Belwe Bold.otf'
+                            theme_text_color: "Custom"
+                            text_color: (1, 0.75, 0, 1)  # Colore dorato
+                            font_style: "H5"
+                            halign: "center"
+                            adaptive_height: True
+
+                        MDSeparator:
+                            
+                        MDLabel:
+                            text: "La Rinascita del Trono"
+                            font_name: 'fonts/Belwe Bold.otf'
+                            theme_text_color: "Custom"
+                            text_color: (1, 1, 1, 1)
+                            font_style: "Body1"
+                            adaptive_height: True
+
+                        MDLabel:
+                            text: "Dopo un breve periodo di anarchia, il trono fu reclamato da Sirius Elendar, un giovane principe che sosteneva di avere discendenze sia dai Redhar che dai Sylvalis. Sirius unì i frammenti del potere delle dinastie passate, guadagnandosi il titolo di Principe del Sangue. Sotto il suo governo, la Fortezza di Kurk tornò a prosperare, con un equilibrio tra forza militare e magia."
+                            font_name: 'fonts/Belwe Italic.ttf'
+                            theme_text_color: "Custom"
+                            text_color: (1, 1, 1, 1)
+                            font_style: "Body1"
+                            adaptive_height: True 
+
+                        MDSeparator:
+                            
+                        MDLabel:
+                            text: "Re Sirius III"
+                            font_name: 'fonts/Belwe Bold.otf'
+                            theme_text_color: "Custom"
+                            text_color: (1, 0.75, 0, 1)
+                            font_style: "Body1"
+                            adaptive_height: True
+                            
+                        MDLabel:
+                            text: "Sirius III continuò a governare saggiamente fino alla sua morte. Per via della misteriosa morte della figlia Elyndra, egli non ha alcun discendente."
+                            font_name: 'fonts/Belwe Italic.ttf'
+                            theme_text_color: "Custom"
+                            text_color: (1, 1, 1, 1)
+                            font_style: "Body1"
+                            adaptive_height: True 
+
+                        MDLabel:
+                            text: "Altro ancora da scoprire..."
+                            font_name: 'fonts/BelweCondensedBT.ttf'
+                            theme_text_color: "Custom"
+                            text_color: (1, 1, 1, 1)
+                            font_style: "Body1"
+                            adaptive_height: True 
+
+                        MDSeparator:

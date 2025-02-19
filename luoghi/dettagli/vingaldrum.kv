@@ -1,0 +1,175 @@
+<VingaldrumScreen>:
+    name: "vingaldrum"
+
+    BoxLayout:
+        orientation: "vertical"
+        padding: "10dp"
+        spacing: "10dp"
+
+        MDTopAppBar:
+            title: "Vingaldrum"
+            elevation: 4
+            left_action_items: [["arrow-left", lambda x: app.change_screen("map")]]
+
+        ScrollView:
+            MDBoxLayout:
+                orientation: 'vertical'
+                padding: "10dp"
+                spacing: "10dp"
+                size_hint_y: None 
+                height: self.minimum_height 
+                pos_hint: {"center_y": 0.5}
+
+                MDCard:
+                    size_hint: None, None
+                    size: "350dp", "280dp"
+                    pos_hint: {"center_x": 0.5, "center_y": 0.5}
+                    elevation: 6
+                    radius: [15, 15, 15, 15]
+                    md_bg_color: 0.1, 0.1, 0.1, 1
+                    adaptive_height: True
+
+                    MDBoxLayout:
+                        orientation: "vertical"
+                        padding: "15dp"
+                        spacing: "10dp"
+                        adaptive_height: True
+
+                        MDLabel:
+                            text: "La Città Argentea"
+                            font_name: 'fonts/Belwe Bold.otf'
+                            theme_text_color: "Custom"
+                            text_color: 1, 0.75, 0, 1  # Colore dorato
+                            font_style: "H5"
+                            halign: "center"
+                            adaptive_height: True
+
+                        MDSeparator:
+                    
+                        MDLabel:
+                            text: "• Descrizione"
+                            font_name: 'fonts/Belwe Bold.otf'
+                            theme_text_color: "Custom"
+                            text_color: (1, 1, 1, 1)
+                            font_style: "Body1"
+                            adaptive_height: True
+
+                            
+                        MDLabel:
+                            text: "Vingaldrum vede le sue origini molto prima della Battaglia di Fost: leggende dicono che nacque da un antico villaggio devastato da antiche creature. Per quanto ne sappiamo, Vingaldrum oppose resistenza a Fost per anni ed anni, anche con l'utilizzo della violenza: vedendo l'avanzata di Fost come una minaccia, spesso i “terroristi in grigio” o “cappucci grigi” (chiamati così dai popolani di Fost per via dei cappucci grigi che permettevano ai banditi di Vingaldrum di attuare i loro attentati senza essere scoperti) si addentrarono all'interno dei villaggi vicini per mettere i bastoni nelle ruote al regno in espansione.  Brentford tentò in ogni modo un approccio diplomatico, ma dovette fronteggiare la minaccia dei criminali: Vingaldrum fu il primo villaggio annesso con la forza al regno di Fost."
+                            font_name: 'fonts/Belwe Italic.ttf'
+                            theme_text_color: "Custom"
+                            text_color: (1, 1, 1, 1)
+                            font_style: "Body1"
+                            adaptive_height: True
+
+                        MDSeparator:
+
+                        MDLabel:
+                            text: "• Luoghi di interesse"
+                            theme_text_color: "Custom"
+                            text_color: (1, 1, 1, 1)
+                            font_name: 'fonts/Belwe Bold.otf'
+                            font_style: "Body1"
+                            adaptive_height: True
+
+                        MDLabel:
+                            text: "PALAZZO DI ETHELINDOR: Il castello che ospita le sale più importanti della città di Vingaldrum, tra cui quella del trono e l'accesso alle segrete."
+                            font_name: 'fonts/Belwe Italic.ttf'
+                            theme_text_color: "Custom"
+                            text_color: (1, 1, 1, 1)
+                            font_style: "Body1"
+                            adaptive_height: True
+
+                        MDLabel:
+                            text: "PRIGIONE DI TAL'NORIEL: Antica caverna che ospitava la cupola magica che teneva imprigionato Tal'Noriel. Ormai è vuota."
+                            font_name: 'fonts/Belwe Italic.ttf'
+                            theme_text_color: "Custom"
+                            text_color: (1, 1, 1, 1)
+                            font_style: "Body1"
+                            adaptive_height: True
+
+                        MDLabel:
+                            text: "LA CASA DELLE ROSE: Storica casa della Regina Ethelindra, ha ospitato i protagonisti nel loro soggiorno a Vingaldrum."
+                            font_name: 'fonts/Belwe Italic.ttf'
+                            theme_text_color: "Custom"
+                            text_color: (1, 1, 1, 1)
+                            font_style: "Body1"
+                            adaptive_height: True
+
+                        MDLabel:
+                            text: "ALTARION: Luogo sacro dedicato alla dea della natura Thalindra. Dopo il sacrificio di Re Sirius è stato corrotto dal Sangue della Terra. Adesso, dove prima sorgeva l'altare che conteneva la gemma verde di Thalindra, è cresciuto un piccolo Kurkhael. Intorno, dove prima vi era un fiume, vi è una grande pozza di sangue rosso fuoco."
+                            font_name: 'fonts/Belwe Italic.ttf'
+                            theme_text_color: "Custom"
+                            text_color: (1, 1, 1, 1)
+                            font_style: "Body1"
+                            adaptive_height: True
+
+                        MDLabel:
+                            text: "POZZA ARGENTEA: Una fontana al centro della piazza principale di Vingaldrum ospitava al suo interno questo strano liquido magico argenteo. Nessuno ha mai ben capito la sua funzione, ma è stato da sempre trattato come un vero e proprio monumento. Almeno fino a quando Vorak Nyxara non ha prosciugato interamente la pozza. In compenso, i protagonisti sanno che il vero nome di quel liquido (quantomeno quello che Vorak gli ha dato) è Codex Argenteo. Sicuramente centra qualcosa con un qualche linguaggio magico, forse runico..."
+                            font_name: 'fonts/Belwe Italic.ttf'
+                            theme_text_color: "Custom"
+                            text_color: (1, 1, 1, 1)
+                            font_style: "Body1"
+                            adaptive_height: True
+
+                        MDSeparator:
+
+                        MDLabel:
+                            text: "• Personaggi collegati"
+                            font_name: 'fonts/Belwe Bold.otf'
+                            theme_text_color: "Custom"
+                            text_color: (1, 1, 1, 1)
+                            font_style: "Body1"
+                            adaptive_height: True
+                            
+                        MDLabel:
+                            text: "Regina Ethelindra"
+                            font_name: 'fonts/Belwe Italic.ttf'
+                            theme_text_color: "Custom"
+                            text_color: (1, 1, 1, 1)
+                            font_style: "Body1"
+                            adaptive_height: True
+
+                        MDLabel:
+                            text: "Lord Ethelindor"
+                            font_name: 'fonts/Belwe Italic.ttf'
+                            theme_text_color: "Custom"
+                            text_color: (1, 1, 1, 1)
+                            font_style: "Body1"
+                            adaptive_height: True
+
+                        MDLabel:
+                            text: "Lord Lae'Noriel Linderful"
+                            font_name: 'fonts/Belwe Italic.ttf'
+                            theme_text_color: "Custom"
+                            text_color: (1, 1, 1, 1)
+                            font_style: "Body1"
+                            adaptive_height: True
+
+                        MDLabel:
+                            text: "Tal'Noriel Linderful"
+                            font_name: 'fonts/Belwe Italic.ttf'
+                            theme_text_color: "Custom"
+                            text_color: (1, 1, 1, 1)
+                            font_style: "Body1"
+                            adaptive_height: True
+                        
+                        MDSeparator:
+
+                        MDLabel:
+                            text: "• Organizzazioni"
+                            font_name: 'fonts/Belwe Bold.otf'
+                            theme_text_color: "Custom"
+                            text_color: (1, 1, 1, 1)
+                            font_style: "Body1"
+                            adaptive_height: True
+
+                        MDLabel:
+                            text: "CAPPUCCI GRIGI: Con a capo Tal'Noriel, hanno continuamente messo i bastoni fra le ruote a Nuova Fost e a Vingaldrum. Artefici della Battaglia Fantasma di Vingaldrum, non si sa se ne sono usciti sconfitti o vincitori. L'unica cosa certa è che storicamente non si erano mai avvicinati così tanto al trono del Lord d'Argento. Prima, la loro base era situata a Valdenor. Dopo lo Sterminio Grigio, si sono spostati da qualche parte sotto Vingaldrum..."
+                            font_name: 'fonts/BelweCondensedBT.ttf'
+                            theme_text_color: "Custom"
+                            text_color: (1, 1, 1, 1)
+                            font_style: "Body1"
+                            adaptive_height: True
+

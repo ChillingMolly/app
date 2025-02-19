@@ -1,0 +1,127 @@
+<ValdenorScreen>:
+    name: "valdenor"
+
+    BoxLayout:
+        orientation: "vertical"
+        padding: "10dp"
+        spacing: "10dp"
+
+        MDTopAppBar:
+            title: "Valdenor"
+            elevation: 4
+            left_action_items: [["arrow-left", lambda x: app.change_screen("map")]]
+
+        ScrollView:
+            MDBoxLayout:
+                orientation: 'vertical'
+                padding: "10dp"
+                spacing: "10dp"
+                size_hint_y: None 
+                height: self.minimum_height 
+                pos_hint: {"center_y": 0.5}
+
+                MDCard:
+                    size_hint: None, None
+                    size: "350dp", "280dp"
+                    pos_hint: {"center_x": 0.5, "center_y": 0.5}
+                    elevation: 6
+                    radius: [15, 15, 15, 15]
+                    md_bg_color: 0.1, 0.1, 0.1, 1
+                    adaptive_height: True
+
+                    MDBoxLayout:
+                        orientation: "vertical"
+                        padding: "15dp"
+                        spacing: "10dp"
+                        adaptive_height: True
+
+                        MDLabel:
+                            text: "Il Ricordo di un Passato"
+                            font_name: 'fonts/Belwe Bold.otf'
+                            theme_text_color: "Custom"
+                            text_color: 1, 0.75, 0, 1  # Colore dorato
+                            font_style: "H5"
+                            halign: "center"
+                            adaptive_height: True
+
+                        MDSeparator:
+                    
+                        MDLabel:
+                            text: "• Descrizione"
+                            font_name: 'fonts/Belwe Bold.otf'
+                            theme_text_color: "Custom"
+                            text_color: (1, 1, 1, 1)
+                            font_style: "Body1"
+                            adaptive_height: True
+
+                            
+                        MDLabel:
+                            text: "Valdenor era un tempo una grande città molto importante. Non si sa bene il perché, ma con l'avvento di Ethelindor e della sua primordiale Vingaldrum, Valdenor divenne sempre meno influente, fino a scomparire totalmente. Negli ultimi anni, alcuni umani avevano posto le loro case e capanne in quei territori. L'unica cosa che rimaneva all'interno di quel luogo e che poteva ricordare qualcosa dell'antica Valdenor era un vecchio tempio. Da poco, un drow con una maschera, conosciuto come Valdrek il Senza Volto, aveva fatto di quel tempio il luogo sacro della sua divinità. Dopo lo Sterminio Grigio, Valdenor non è altro che un villaggio fantasma e totalmente disabitato. Ospita solo una fossa comune, ed un fiore."
+                            font_name: 'fonts/Belwe Italic.ttf'
+                            theme_text_color: "Custom"
+                            text_color: (1, 1, 1, 1)
+                            font_style: "Body1"
+                            adaptive_height: True
+
+                        MDSeparator:
+
+                        MDLabel:
+                            text: "• Luoghi di interesse"
+                            theme_text_color: "Custom"
+                            text_color: (1, 1, 1, 1)
+                            font_name: 'fonts/Belwe Bold.otf'
+                            font_style: "Body1"
+                            adaptive_height: True
+
+                        MDLabel:
+                            text: "TEMPIO DI ISHUS: Nelle caverne sottostanti al tempio del Dio dei Segreti, si cela una mostruosa creatura, protettrice di qualcosa di inestimabile. Non si sa se il Senza Volto dimori ancora lì, a guardia della creatura e di ciò che essa nasconde..."
+                            font_name: 'fonts/Belwe Italic.ttf'
+                            theme_text_color: "Custom"
+                            text_color: (1, 1, 1, 1)
+                            font_style: "Body1"
+                            adaptive_height: True
+
+                        MDLabel:
+                            text: "VECCHIO NASCONDIGLIO DEI CAPPUCCI GRIGI: Ancora non esplorato del tutto..."
+                            font_name: 'fonts/Belwe Italic.ttf'
+                            theme_text_color: "Custom"
+                            text_color: (1, 1, 1, 1)
+                            font_style: "Body1"
+                            adaptive_height: True
+
+                        MDSeparator:
+
+                        MDLabel:
+                            text: "• Personaggi collegati"
+                            font_name: 'fonts/Belwe Bold.otf'
+                            theme_text_color: "Custom"
+                            text_color: (1, 1, 1, 1)
+                            font_style: "Body1"
+                            adaptive_height: True
+                            
+                        MDLabel:
+                            text: "Valdrek il Senza Volto"
+                            font_name: 'fonts/Belwe Italic.ttf'
+                            theme_text_color: "Custom"
+                            text_color: (1, 1, 1, 1)
+                            font_style: "Body1"
+                            adaptive_height: True
+                        
+                        MDSeparator:
+
+                        MDLabel:
+                            text: "• Organizzazioni"
+                            font_name: 'fonts/Belwe Bold.otf'
+                            theme_text_color: "Custom"
+                            text_color: (1, 1, 1, 1)
+                            font_style: "Body1"
+                            adaptive_height: True
+
+                        MDLabel:
+                            text: "CAPPUCCI GRIGI: Vedi Vingaldrum."
+                            font_name: 'fonts/BelweCondensedBT.ttf'
+                            theme_text_color: "Custom"
+                            text_color: (1, 1, 1, 1)
+                            font_style: "Body1"
+                            adaptive_height: True
+

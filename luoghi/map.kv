@@ -1,0 +1,194 @@
+<MapScreen>:
+    name: "map"
+
+    BoxLayout:
+        orientation: "vertical"
+        padding: "10dp"
+        spacing: "10dp"
+
+        MDTopAppBar:
+            title: "Luoghi"
+            elevation: 4
+            left_action_items: [["arrow-left", lambda x: app.change_screen("menu")]]
+
+        ScrollView:
+            do_scroll_x: False
+            do_scroll_y: True
+
+            GridLayout:
+                cols: 2
+                size_hint_y: None
+                height: self.minimum_height
+                pos_hint: {"center_x": 0.5}  # Centra il layout orizzontalmente
+                spacing: "10dp"
+                padding: "10dp"
+
+                MDCard:
+                    size_hint: None, None
+                    size: "150dp", "200dp"
+                    elevation: 8
+                    on_release: app.change_screen("fost")
+                    BoxLayout:
+                        orientation: 'vertical'
+                        FitImage:
+                            source: "assets/fost.png"
+                            size_hint_y: 0.8
+                        Label:
+                            text: "Fost"
+                            size_hint_y: 0.2
+                            halign: 'center'
+                            valign: 'middle'
+                            bold: True
+
+                MDCard:
+                    size_hint: None, None
+                    size: "150dp", "200dp"
+                    elevation: 8
+                    on_release: app.change_screen("goldbrick")
+                    BoxLayout:
+                        orientation: 'vertical'
+                        FitImage:
+                            source: "assets/goldbrick.png"
+                            size_hint_y: 0.8
+                        Label:
+                            text: "Goldbrick"
+                            size_hint_y: 0.2
+                            halign: 'center'
+                            valign: 'middle'
+                            bold: True
+
+                MDCard:
+                    size_hint: None, None
+                    size: "150dp", "200dp"
+                    elevation: 8
+                    on_release: app.change_screen("kurk") 
+                    BoxLayout:
+                        orientation: 'vertical'
+                        FitImage:
+                            source: "assets/kurk.png"
+                            size_hint_y: 0.8
+                        Label:
+                            text: "Kurk"
+                            size_hint_y: 0.2
+                            halign: 'center'
+                            valign: 'middle'
+                            bold: True
+
+                MDCard:
+                    size_hint: None, None
+                    size: "150dp", "200dp"
+                    elevation: 8
+                    on_release: app.change_screen("valdenor")
+                    BoxLayout:
+                        orientation: 'vertical'
+                        FitImage:
+                            source: "assets/valdenor.png"
+                            size_hint_y: 0.8
+                        Label:
+                            text: "Valdenor"
+                            size_hint_y: 0.2
+                            halign: 'center'
+                            valign: 'middle'
+                            bold: True
+
+                MDCard:
+                    size_hint: None, None
+                    size: "150dp", "200dp"
+                    elevation: 8
+                    on_release: app.change_screen("vingaldrum")
+                    BoxLayout:
+                        orientation: 'vertical'
+                        FitImage:
+                            source: "assets/vingaldrum.png"
+                            size_hint_y: 0.8
+                        Label:
+                            text: "Vingaldrum"
+                            size_hint_y: 0.2
+                            halign: 'center'
+                            valign: 'middle'
+                            bold: True
+
+                MDCard:
+                    size_hint: None, None
+                    size: "150dp", "200dp"
+                    elevation: 8
+                    on_release: app.change_screen("ogalduk")
+                    BoxLayout:
+                        orientation: 'vertical'
+                        FitImage:
+                            source: "assets/ogalduk.png"
+                            size_hint_y: 0.8
+                        Label:
+                            text: "Monti Ogalduk"
+                            size_hint_y: 0.2
+                            halign: 'center'
+                            valign: 'middle'
+                            bold: True
+
+                MDCard:
+                    size_hint: None, None
+                    size: "150dp", "200dp"
+                    elevation: 8
+                    on_release: app.change_screen("khardurim")
+                    BoxLayout:
+                        orientation: 'vertical'
+                        FitImage:
+                            source: "assets/khardurim.png"
+                            size_hint_y: 0.8
+                        Label:
+                            text: "Khar Durim"
+                            size_hint_y: 0.2
+                            halign: 'center'
+                            valign: 'middle'
+                            bold: True
+
+                MDCard:
+                    size_hint: None, None
+                    size: "150dp", "200dp"
+                    elevation: 8
+                    on_release: app.change_screen("laboratorio")
+                    BoxLayout:
+                        orientation: 'vertical'
+                        FitImage:
+                            source: "assets/laboratorio.png"
+                            size_hint_y: 0.8
+                        Label:
+                            text: "Laboratorio"
+                            size_hint_y: 0.2
+                            halign: 'center'
+                            valign: 'middle'
+                            bold: True
+
+                MDCard:
+                    size_hint: None, None
+                    size: "150dp", "200dp"
+                    elevation: 8
+                    on_release: app.change_screen("ethis")
+                    BoxLayout:
+                        orientation: 'vertical'
+                        FitImage:
+                            source: "assets/ethis.png"
+                            size_hint_y: 0.8
+                        Label:
+                            text: "Ethis"
+                            size_hint_y: 0.2
+                            halign: 'center'
+                            valign: 'middle'
+                            bold: True
+
+                MDCard:
+                    size_hint: None, None
+                    size: "150dp", "200dp"
+                    elevation: 8
+                    on_release: app.change_screen("northpearl")
+                    BoxLayout:
+                        orientation: 'vertical'
+                        FitImage:
+                            source: "assets/northpearl.png"
+                            size_hint_y: 0.8
+                        Label:
+                            text: "Northpearl"
+                            size_hint_y: 0.2
+                            halign: 'center'
+                            valign: 'middle'
+                            bold: True

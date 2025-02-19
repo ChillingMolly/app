@@ -1,0 +1,57 @@
+<BattagliaDiFostScreen>:
+    name: "battaglia_di_fost"
+
+    BoxLayout:
+        orientation: "vertical"
+        padding: "10dp"
+        spacing: "10dp"
+
+        MDTopAppBar:
+            title: "La Battaglia di Fost"
+            elevation: 4
+            left_action_items: [["arrow-left", lambda x: app.change_screen("lore")]]
+
+        ScrollView:
+            MDBoxLayout:
+                orientation: 'vertical'
+                padding: "10dp"
+                spacing: "10dp"
+                size_hint_y: None 
+                height: self.minimum_height 
+                pos_hint: {"center_y": 0.5}
+
+                MDCard:
+                    size_hint: None, None
+                    size: "350dp", "280dp"
+                    pos_hint: {"center_x": 0.5, "center_y": 0.5}
+                    elevation: 6
+                    radius: [15, 15, 15, 15]
+                    md_bg_color: 0.1, 0.1, 0.1, 1
+                    adaptive_height: True
+
+                    MDBoxLayout:
+                        orientation: "vertical"
+                        padding: "15dp"
+                        spacing: "10dp"
+                        adaptive_height: True
+
+                        MDLabel:
+                            text: "La Storia della Battaglia di Fost"
+                            font_name: 'fonts/Belwe Bold.otf'
+                            theme_text_color: "Custom"
+                            text_color: (1, 0.75, 0, 1)  # Colore dorato
+                            font_style: "H5"
+                            halign: "center"
+                            adaptive_height: True
+
+                        MDSeparator:
+                            
+                        MDLabel:
+                            text: "Fu l'avidità di un uomo a scatenare la rovina. Il governatore Carlyle, bramoso di tesori sepolti, inviò schiere di minatori nelle viscere della montagna, ignorando gli ammonimenti dei saggi e le superstizioni sussurrate nei mercati. I picconi squarciarono la pietra, le fiamme delle forge illuminarono le caverne millenarie... e qualcosa si svegliò. Dai recessi più oscuri delle montagne, un antico drago emerse, i suoi occhi dorati scintillanti di un'ira rimasta sopita per secoli. Non era solo. Al suo richiamo, stormi di draghi minori e viverne si sollevarono dai crepacci e dalle cime, un'orda alata che avrebbe portato il fuoco e la distruzione su Fost. Il cielo si tinse di rosso, le nubi si squarciarono sotto l'impeto delle ali possenti, e il tuono della vendetta draconica risuonò sulla città. Il giorno dell'assalto, Fost fu avvolta dalle fiamme. Le possenti mura, che per secoli avevano protetto i suoi abitanti, si sbriciolarono sotto il soffio incandescente del drago antico. Le torri crollarono, le strade si riempirono di grida e cenere. Quando ogni speranza sembrava perduta, un gruppo di eroi rispose alla chiamata disperata della città. Essi erano i Segugi della Giustizia, cinque campioni legati dal destino e dall'onore. Nefarian, dragonide guerriero, la cui ascia forgiata con la magia dei suoi stessi antenati brillava come un sole di mezzogiorno. Zenith, mago umano, padrone del futuro, capace di vedere ciò che dovrebbe accadere. Thorrak, nano artefice, il cui genio meccanico creò una teca per uno dei catalizzatori magici più potenti del mondo. Zharun, mezzorco guerriero, la cui forza primordiale squarciava le corazze dei draghi come fosse pergamena. Enryn, elfo ranger, le cui frecce colpivano con la precisione di una lama di luna. La battaglia infuriò dall'alba al tramonto, e poi ancora attraverso le ombre della notte. I Segugi combatterono con il coraggio dei miti, abbattendo un drago dopo l'altro mentre la città bruciava attorno a loro. Eppure, il drago antico sembrava invincibile, la sua furia alimentata da eoni di collera repressa. Fu in un momento di disperazione che Enryn, con lo sguardo affilato come la lama del fato, scoccò una freccia che trafisse l'occhio del colosso alato, accecandolo. Barcollante, la creatura ruggì, e Nefarian colse l'attimo: con un balzo sovrumano, affondò la sua lama nel cuore del drago, trafiggendolo fino all'elsa. Il mostro lanciò un ultimo, straziante grido prima di crollare, scuotendo la terra con la sua caduta. L'alba sorse su una città in rovina, ma non sconfitta. Fost aveva perso molto, ma la sua gente non dimenticò mai il sacrificio e il valore di quei cinque eroi. "
+                            font_name: 'fonts/Belwe Italic.ttf'
+                            theme_text_color: "Custom"
+                            text_color: (1, 1, 1, 1)
+                            font_style: "Body1"
+                            adaptive_height: True
+
+                      

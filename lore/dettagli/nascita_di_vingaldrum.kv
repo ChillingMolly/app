@@ -1,0 +1,140 @@
+<NascitaDiVingaldrumScreen>:
+    name: "nascita_di_vingaldrum"
+
+    BoxLayout:
+        orientation: "vertical"
+        padding: "10dp"
+        spacing: "10dp"
+
+        MDTopAppBar:
+            title: "Il Mito della Nascita di Vingaldrum"
+            elevation: 4
+            left_action_items: [["arrow-left", lambda x: app.change_screen("lore")]]
+
+        ScrollView:
+            MDBoxLayout:
+                orientation: 'vertical'
+                padding: "10dp"
+                spacing: "10dp"
+                size_hint_y: None 
+                height: self.minimum_height 
+                pos_hint: {"center_y": 0.5}
+
+                MDCard:
+                    size_hint: None, None
+                    size: "350dp", "280dp"
+                    pos_hint: {"center_x": 0.5, "center_y": 0.5}
+                    elevation: 6
+                    radius: [15, 15, 15, 15]
+                    md_bg_color: 0.1, 0.1, 0.1, 1
+                    adaptive_height: True
+
+                    MDBoxLayout:
+                        orientation: "vertical"
+                        padding: "15dp"
+                        spacing: "10dp"
+                        adaptive_height: True
+
+                        MDLabel:
+                            text: "La Nascita di Vingaldrum"
+                            font_name: 'fonts/Belwe Bold.otf'
+                            theme_text_color: "Custom"
+                            text_color: 1, 0.75, 0, 1  # Colore dorato
+                            font_style: "H5"
+                            halign: "center"
+                            adaptive_height: True
+
+                        MDSeparator:
+                            
+                        MDLabel:
+                            text: "Molto prima che le fronde argentee e dorate di Vingaldrum sfiorassero il cielo, prima ancora che gli elfi alti camminassero nei boschi incantati, esisteva solo la Foresta Primordiale, un dominio sacro abitato dagli spiriti della natura e dalla benevola dea Thalindra. Si narra che in quei tempi remoti, quando il mondo era ancora giovane, un grande esodo ebbe luogo tra gli elfi alti. Essi erano divisi, dispersi tra terre selvagge e regni in rovina, e la loro gente vagava senza una casa. Fu allora che sorse un leader tra loro: Ethelindor, il Principe Errante, discendente di una nobile stirpe dimenticata."
+                            font_name: 'fonts/Belwe Italic.ttf'
+                            theme_text_color: "Custom"
+                            text_color: (1, 1, 1, 1)
+                            font_style: "Body1"
+                            adaptive_height: True
+
+                        MDSeparator:
+                            
+                        MDLabel:
+                            text: "La Visione della Quercia Eterna"
+                            font_name: 'fonts/Belwe Bold.otf'
+                            theme_text_color: "Custom"
+                            text_color: 1, 0.75, 0, 1  # Colore dorato
+                            font_style: "H5"
+                            halign: "center"
+                            adaptive_height: True
+
+                        MDSeparator:
+                            
+                        MDLabel:
+                            text: "Durante il suo vagare, Ethelindor cercava un luogo sicuro dove il suo popolo potesse prosperare. Ma la terra era selvaggia, infestata da spiriti inquieti e ombre antiche. In preghiera alla dea Thalindra, egli chiese un segno, una guida. La dea rispose con una visione: nella sua mente apparve un immenso albero, più antico del tempo stesso, con rami che si estendevano fino al cielo stellato e radici che affondavano nel cuore del mondo. Là troverai la dimora del tuo popolo, sussurrò la dea nel vento. Guidato dalla visione, Ethelindor e i suoi seguaci attraversarono valli e fiumi, scalando montagne e superando foreste oscure, finché giunsero in una radura nascosta nel cuore del mondo. Lì, come nella sua visione, svettava un'enorme quercia dalle foglie d'argento e d'oro, il cui tronco sembrava scolpito dalla stessa divinità. Era l'Eterna Quercia, il cuore della foresta, la benedizione di Thalindra."
+                            font_name: 'fonts/Belwe Italic.ttf'
+                            theme_text_color: "Custom"
+                            text_color: (1, 1, 1, 1)
+                            font_style: "Body1"
+                            adaptive_height: True
+
+                        MDSeparator:
+                            
+                        MDLabel:
+                            text: "La Prova della Dea"
+                            font_name: 'fonts/Belwe Bold.otf'
+                            theme_text_color: "Custom"
+                            text_color: 1, 0.75, 0, 1  # Colore dorato
+                            font_style: "H5"
+                            halign: "center"
+                            adaptive_height: True
+
+                        MDSeparator:
+                            
+                        MDLabel:
+                            text: "Ma il luogo non era ancora pronto per accogliere gli elfi. Gli spiriti della foresta lo proteggevano con feroce gelosia, e i venti sussurravano di un'antica maledizione: nessun mortale poteva dimorarvi senza prima dimostrare il proprio valore. Fu allora che Thalindra apparve a Ethelindor sotto forma di una donna avvolta da un manto di foglie e luce. <<Per reclamare questa terra, dovrai dimostrare la tua purezza d'animo>>, disse la dea. <<Solo colui che comprenderà il cuore della natura potrà chiamare questo luogo casa.>> Ethelindor accettò la sfida e si immerse nella foresta, scomparendo tra gli alberi per sette giorni e sette notti. Nessuno sa con certezza quali prove affrontò: alcuni dicono che parlò con gli spiriti antichi, altri che domò una tempesta generata dalla stessa foresta, altri ancora che affrontò un grande guardiano, una bestia sacra forgiata dal volere della dea. Quando finalmente riemerse, portava con sé un'antica gemma di giada verde, pulsante di energia vitale. Era il Cuore della Foresta, il dono di Thalindra. La dea sorrise e disse: <<Hai dimostrato di comprendere l'equilibrio della natura. Questa terra ora ti appartiene, ma ricordati: Vingaldrum dovrà sempre essere un luogo di armonia e rispetto per la vita.>>"
+                            font_name: 'fonts/Belwe Italic.ttf'
+                            theme_text_color: "Custom"
+                            text_color: (1, 1, 1, 1)
+                            font_style: "Body1"
+                            adaptive_height: True
+
+                        MDSeparator:
+                            
+                        MDLabel:
+                            text: "La Fondazione di Vingaldrum"
+                            font_name: 'fonts/Belwe Bold.otf'
+                            theme_text_color: "Custom"
+                            text_color: 1, 0.75, 0, 1  # Colore dorato
+                            font_style: "H5"
+                            halign: "center"
+                            adaptive_height: True
+
+                        MDSeparator:
+                            
+                        MDLabel:
+                            text: "Ethelindor affondò la gemma nel suolo ai piedi dell'Eterna Quercia, e immediatamente la terra si risvegliò. Radici e rami intrecciati formarono le prime case, cristalli di luce iniziarono a brillare tra le fronde, e un fiume d'argento emerse dal nulla, scorrendo attraverso la città nascente. Così nacque Vingaldrum, la Città delle Fronde Eterne, la dimora degli elfi alti. Ethelindor divenne il primo sovrano, un re saggio e illuminato, e sotto la sua guida la città prosperò, rimanendo per sempre un luogo di armonia, magia e devozione alla dea Thalindra."
+                            font_name: 'fonts/Belwe Italic.ttf'
+                            theme_text_color: "Custom"
+                            text_color: (1, 1, 1, 1)
+                            font_style: "Body1"
+                            adaptive_height: True
+
+                        MDSeparator:
+                            
+                        MDLabel:
+                            text: "L'eredità di Ethelindor"
+                            font_name: 'fonts/Belwe Bold.otf'
+                            theme_text_color: "Custom"
+                            text_color: 1, 0.75, 0, 1  # Colore dorato
+                            font_style: "H5"
+                            halign: "center"
+                            adaptive_height: True
+
+                        MDSeparator:
+                            
+                        MDLabel:
+                            text: "Ancora oggi, nel cuore di Vingaldrum, sotto l'ombra dell'Eterna Quercia, si trova l'Altarion, il santuario sacro dedicato alla dea. Si dice che la gemma di giada, il Cuore della Foresta, continui a pulsare sopra quell'altare, garantendo equilibrio e protezione alla città. E ogni anno, durante la Cerimonia dell'Equinozio, gli elfi di Vingaldrum si radunano ai piedi dell'altare sacro per rinnovare il loro patto con Thalindra, ricordando che la loro città non è solo un regno, ma un dono della natura, da custodire per l'eternità."
+                            font_name: 'fonts/Belwe Italic.ttf'
+                            theme_text_color: "Custom"
+                            text_color: (1, 1, 1, 1)
+                            font_style: "Body1"
+                            adaptive_height: True
+

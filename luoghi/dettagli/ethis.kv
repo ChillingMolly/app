@@ -1,0 +1,116 @@
+<EthisScreen>:
+    name: "ethis"
+
+    BoxLayout:
+        orientation: "vertical"
+        padding: "10dp"
+        spacing: "10dp"
+
+        MDTopAppBar:
+            title: "Ethis"
+            elevation: 4
+            left_action_items: [["arrow-left", lambda x: app.change_screen("map")]]
+
+        ScrollView:
+            MDBoxLayout:
+                orientation: 'vertical'
+                padding: "10dp"
+                spacing: "10dp"
+                size_hint_y: None 
+                height: self.minimum_height 
+                pos_hint: {"center_y": 0.5}
+
+                MDCard:
+                    size_hint: None, None
+                    size: "350dp", "280dp"
+                    pos_hint: {"center_x": 0.5, "center_y": 0.5}
+                    elevation: 6
+                    radius: [15, 15, 15, 15]
+                    md_bg_color: 0.1, 0.1, 0.1, 1
+                    adaptive_height: True
+
+                    MDBoxLayout:
+                        orientation: "vertical"
+                        padding: "15dp"
+                        spacing: "10dp"
+                        adaptive_height: True
+
+                        MDLabel:
+                            text: "La Fortezza Oscura"
+                            font_name: 'fonts/Belwe Bold.otf'
+                            theme_text_color: "Custom"
+                            text_color: 1, 0.75, 0, 1  # Colore dorato
+                            font_style: "H5"
+                            halign: "center"
+                            adaptive_height: True
+
+                        MDSeparator:
+                    
+                        MDLabel:
+                            text: "• Descrizione"
+                            font_name: 'fonts/Belwe Bold.otf'
+                            theme_text_color: "Custom"
+                            text_color: (1, 1, 1, 1)
+                            font_style: "Body1"
+                            adaptive_height: True
+
+                            
+                        MDLabel:
+                            text: "La città-fortezza di Ethis era un tempo il luogo sacro per eccellenza del culto di Athesto. Da sempre chiusa su sé stessa, Ethis era governata da quattro sacerdoti, ognuno dei quali incarnava una dote del dio Athesto. Accadde però che col tempo il culto di Athesto perse sempre più di credibilità e adepti e la città di Ethis cadde nel caos più totale. Da sempre estranea a Fost, è una delle poche città a non essersi assoggettata al potere di Brenford. Non si sa cosa accade all'interno di quella segreta fortezza, ma sicuramente nulla di buono..."
+                            font_name: 'fonts/Belwe Italic.ttf'
+                            theme_text_color: "Custom"
+                            text_color: (1, 1, 1, 1)
+                            font_style: "Body1"
+                            adaptive_height: True
+
+                        MDSeparator:
+
+                        MDLabel:
+                            text: "• Luoghi di interesse"
+                            theme_text_color: "Custom"
+                            text_color: (1, 1, 1, 1)
+                            font_name: 'fonts/Belwe Bold.otf'
+                            font_style: "Body1"
+                            adaptive_height: True
+
+                        MDLabel:
+                            text: "Ancora inesplorata..."
+                            font_name: 'fonts/Belwe Italic.ttf'
+                            theme_text_color: "Custom"
+                            text_color: (1, 1, 1, 1)
+                            font_style: "Body1"
+                            adaptive_height: True
+
+                        MDSeparator:
+
+                        MDLabel:
+                            text: "• Personaggi collegati"
+                            font_name: 'fonts/Belwe Bold.otf'
+                            theme_text_color: "Custom"
+                            text_color: (1, 1, 1, 1)
+                            font_style: "Body1"
+                            adaptive_height: True
+                            
+                        MDLabel:
+                            text: "Ivor"
+                            font_name: 'fonts/Belwe Italic.ttf'
+                            theme_text_color: "Custom"
+                            text_color: (1, 1, 1, 1)
+                            font_style: "Body1"
+                            adaptive_height: True
+
+                        MDLabel:
+                            text: "Arlin"
+                            font_name: 'fonts/Belwe Italic.ttf'
+                            theme_text_color: "Custom"
+                            text_color: (1, 1, 1, 1)
+                            font_style: "Body1"
+                            adaptive_height: True
+
+                        MDLabel:
+                            text: "Arkhan"
+                            font_name: 'fonts/Belwe Italic.ttf'
+                            theme_text_color: "Custom"
+                            text_color: (1, 1, 1, 1)
+                            font_style: "Body1"
+                            adaptive_height: True

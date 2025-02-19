@@ -1,0 +1,271 @@
+<GoldbrickScreen>:
+    name: "goldbrick"
+
+    BoxLayout:
+        orientation: "vertical"
+        padding: "10dp"
+        spacing: "10dp"
+
+        MDTopAppBar:
+            title: "Goldbrick"
+            elevation: 4
+            left_action_items: [["arrow-left", lambda x: app.change_screen("map")]]
+
+        ScrollView:
+            MDBoxLayout:
+                orientation: 'vertical'
+                padding: "10dp"
+                spacing: "10dp"
+                size_hint_y: None 
+                height: self.minimum_height 
+                pos_hint: {"center_y": 0.5}
+
+                MDCard:
+                    size_hint: None, None
+                    size: "350dp", "280dp"
+                    pos_hint: {"center_x": 0.5, "center_y": 0.5}
+                    elevation: 6
+                    radius: [15, 15, 15, 15]
+                    md_bg_color: 0.1, 0.1, 0.1, 1
+                    adaptive_height: True
+
+                    MDBoxLayout:
+                        orientation: "vertical"
+                        padding: "15dp"
+                        spacing: "10dp"
+                        adaptive_height: True
+
+                        MDLabel:
+                            text: "La Culla d'Oro del Nord"
+                            font_name: 'fonts/Belwe Bold.otf'
+                            theme_text_color: "Custom"
+                            text_color: 1, 0.75, 0, 1  # Colore dorato
+                            font_style: "H5"
+                            halign: "center"
+                            adaptive_height: True
+
+                        MDSeparator:
+                    
+                        MDLabel:
+                            text: "• Descrizione"
+                            font_name: 'fonts/Belwe Bold.otf'
+                            theme_text_color: "Custom"
+                            text_color: (1, 1, 1, 1)
+                            font_style: "Body1"
+                            adaptive_height: True
+
+                            
+                        MDLabel:
+                            text: "La città di Goldbrick è al momento il centro principale della Nuova Fost, nonché attuale capitale dello stato federale. Nasce in realtà come piccolo villaggio di umani nativi del nuovo mondo ma principalmente ex seguaci del culto di Athesto, fuggiti dalla città di Ethis a seguito degli avvenimenti che hanno visto la 'città sacra' epicentro di una profonda corruzione (con l'avvento di Alahus e degli Slaad). Per via della corruzione della propria vecchia patria, i precursori di Goldbrick abbandonarono lentamente il culto di Athesto e continuarono a vivere e sviluppare il  villaggio soprattutto attraverso l'agricoltura e la pesca (un fiume si sviluppa non poco lontano da Goldbrick). Terminata la Battaglia di Fost (che vide protagonisti i Segugi della Giustizia nella liberazione della città dalla minaccia dei draghi), Goldbrick subì le ripercussioni della crisi di Fost, con cui aveva iniziato ad avere rapporti economici (Fost era ancora sotto la guida di Carlyle, che vedeva in Goldbrick una risorsa molto importante). Fu Brentford, dopo l'approvazione del Consiglio di Fost e la riuscita delle trattative con Goldbrick, ad annettere Goldbrick al regno come “prima città del nord”, avendo già ben in mente il suo progetto di colonizzazione."
+                            font_name: 'fonts/Belwe Italic.ttf'
+                            theme_text_color: "Custom"
+                            text_color: (1, 1, 1, 1)
+                            font_style: "Body1"
+                            adaptive_height: True
+
+                        MDLabel:
+                            text: "Possiamo dunque suddividere la storia di Goldbrick in due macroaree: la prima caratterizzata dal culto di Athesto, nella quale la società era organizzata in maniera più “gerarchica”. Durante questo arco di tempo (partendo dall'egemonia di Alahus su Ethis) il “governatore” del piccolo villaggio fu Alfred Halastor, chierico della vecchia città fortezza di Ethis: fu lui a gestire il piccolo villaggio nei suoi primi mesi di sviluppo e a lasciarlo in ottime condizioni. Nei primi mesi infatti era  centrale la bonificazione e ottimizzazione dei terreni intorno al villaggio, la creazione di un sentiero sicuro che portasse al fiume adiacente e la costruzione di un piccolo tempio in favore di Athesto."
+                            font_name: 'fonts/Belwe Italic.ttf'
+                            theme_text_color: "Custom"
+                            text_color: (1, 1, 1, 1)
+                            font_style: "Body1"
+                            adaptive_height: True
+
+                        MDLabel:
+                            text: "Pian piano i cittadini iniziarono però a dubitare del proprio credo e il tutto sfociò nel caos per via dell'influenza di Balin Torfard: egli era un mercante proveniente da Fost che vide in quella comunità di fedeli delusi un'opportunità (principalmente economica): fu lui ad aprire il villaggio a dei rapporti con Fost e fu lui a capo degli scambi economici che avvenivano tra il villaggio e la grande città (sfruttando enormemente della crisi). Il villaggio diventava pian piano  una città e i cittadini iniziarono a riporre la propria fiducia in Torfard, tutto ciò in concomitanza con la fine del culto di Athesto, che nella città veniva pian piano dimenticato."
+                            font_name: 'fonts/Belwe Italic.ttf'
+                            theme_text_color: "Custom"
+                            text_color: (1, 1, 1, 1)
+                            font_style: "Body1"
+                            adaptive_height: True
+
+                        MDLabel:
+                            text: "Halastor, profondamente deluso, distrusse il tempio di Athesto e si allontanò da Goldbrick, lasciando il potere all'ormai acclamato Torfard. Da  quel momento, possiamo decretare l'inizio della seconda “macroarea” della storia di Golbrick, nella quale la città (non più un villaggio) eliminò quella tipica organizzazione gerarchica e iniziò a dividersi in quelle che noi chiamiamo “classi sociali”: pian piano i commercianti (e quindi  la borghesia) iniziarono a prendere sempre più piede e centro all'interno dei meccanismi sociali di Goldbrick, cosa che non faceva altro che arricchire sempre di più Torfard, fino a far raggiungere alla città quei requisiti economici che potevano renderla “ottimale” per il neo regno di Fost appena fondato."
+                            font_name: 'fonts/Belwe Italic.ttf'
+                            theme_text_color: "Custom"
+                            text_color: (1, 1, 1, 1)
+                            font_style: "Body1"
+                            adaptive_height: True
+
+                        MDLabel:
+                            text: "Attualmente, Goldbrick è il centro economico e amministrativo di  tutta la Nuova Fost: da essa partono le più importanti carovane della Gilda degli Scambi di Fost che si occupano di regolare tutto il commercio tra questo stato federale e quello centrale, sede della capitale (importante è l'Edificio Amministrativo, sede degli uffici di governo federale, che ospita anche le stalle ed i magazzini dai quali hanno inizio i lunghi viaggi con  destinazione Fost). Importante è anche la Sede centrale delle Guardie federali, quartier generale delle forze che  regolano e gestiscono l'ordine all'interno di tutta Nuova Fost."
+                            font_name: 'fonts/Belwe Italic.ttf'
+                            theme_text_color: "Custom"
+                            text_color: (1, 1, 1, 1)
+                            font_style: "Body1"
+                            adaptive_height: True
+
+                        MDLabel:
+                            text: "Non vi sono edifici di culto: la tendenza è  soprattutto illuministica e umanistica (come in tutta Fost) ed il vecchio tempio di Athesto è divenuto un vero e proprio monumento simbolico degli “albori”  di Goldbrick, di una tradizione (questo vecchio culto è l'unica cosa che lega Goldbrick a qualcosa di antico)."
+                            font_name: 'fonts/Belwe Italic.ttf'
+                            theme_text_color: "Custom"
+                            text_color: (1, 1, 1, 1)
+                            font_style: "Body1"
+                            adaptive_height: True
+
+                        MDSeparator:
+
+                        MDLabel:
+                            text: "• Luoghi di interesse"
+                            theme_text_color: "Custom"
+                            text_color: (1, 1, 1, 1)
+                            font_name: 'fonts/Belwe Bold.otf'
+                            font_style: "Body1"
+                            adaptive_height: True
+
+                        MDLabel:
+                            text: "LE PORTE DEL NORD: Una delle locande più eleganti e rinomate di Fost intera, la locanda delle Porte del Nord vanta di essere la prima sul suolo oltre i Monti Ogalduk. Gestita da Tommy Torfard, è un luogo di classe, dove anche il più piccolo dettaglio deve essere su misura per chi la frequenta. I costi sono molto alti."
+                            font_name: 'fonts/Belwe Italic.ttf'
+                            theme_text_color: "Custom"
+                            text_color: (1, 1, 1, 1)
+                            font_style: "Body1"
+                            adaptive_height: True
+
+                        MDLabel:
+                            text: "EDIFICIO AMMINISTRATIVO: Una serie di palazzi che ospitano tutti gli uffici importanti del personale di Balin Torfard, nonché il suo personale. E' qui che i personaggi hanno partecipato alla conferenza tra Vingaldrum e Khar Durim."
+                            font_name: 'fonts/Belwe Italic.ttf'
+                            theme_text_color: "Custom"
+                            text_color: (1, 1, 1, 1)
+                            font_style: "Body1"
+                            adaptive_height: True
+
+                        MDLabel:
+                            text: "POZZO DORATO: La locanda chiave per tutti gli avventurieri: qui, Eldran Kheltorn si occupa di consegnare missioni agli avventuerieri che ne cercano una. Non di classe come le Porte del Nord, ma rimane la locanda più trafficata di Goldbrick."
+                            font_name: 'fonts/Belwe Italic.ttf'
+                            theme_text_color: "Custom"
+                            text_color: (1, 1, 1, 1)
+                            font_style: "Body1"
+                            adaptive_height: True
+
+                        MDLabel:
+                            text: "IL BICCHIERE VUOTO: La locanda di Durgan lo Sdentato non è solo sede degli eventi dei Figli della Polvere Nera, ma è anche l'unico vero e proprio casinò di Goldbrick. In pochi sanno la storia di questa piccola locanda e del suo proprietario, e nessuno sa perché Goldbrick non stia facendo nulla per fermare le attività illecite che lì dentro si svolgono."
+                            font_name: 'fonts/Belwe Italic.ttf'
+                            theme_text_color: "Custom"
+                            text_color: (1, 1, 1, 1)
+                            font_style: "Body1"
+                            adaptive_height: True
+
+                        MDLabel:
+                            text: "MONUMENTO AD ATHESTO: Le rovine di quello che era un altare dedicato ad Athesto. L'unico vero e proprio rimasuglio di una storia e una cultura che Goldbrick vorrebbe conservare nella sua storia."
+                            font_name: 'fonts/Belwe Italic.ttf'
+                            theme_text_color: "Custom"
+                            text_color: (1, 1, 1, 1)
+                            font_style: "Body1"
+                            adaptive_height: True
+
+                        MDLabel:
+                            text: "CASA DI GRIFFITH: La casa del povero contadino Griffith, che abita con la piccola figlia. Si trova nei dintorni di Goldbrick, dove le grandi case lasciano spazio alle piccole capanne e ai terreni dei contadini."
+                            font_name: 'fonts/Belwe Italic.ttf'
+                            theme_text_color: "Custom"
+                            text_color: (1, 1, 1, 1)
+                            font_style: "Body1"
+                            adaptive_height: True
+
+
+                        MDSeparator:
+
+                        MDLabel:
+                            text: "• Personaggi collegati"
+                            font_name: 'fonts/Belwe Bold.otf'
+                            theme_text_color: "Custom"
+                            text_color: (1, 1, 1, 1)
+                            font_style: "Body1"
+                            adaptive_height: True
+                            
+                        MDLabel:
+                            text: "Balin Torfard"
+                            font_name: 'fonts/Belwe Italic.ttf'
+                            theme_text_color: "Custom"
+                            text_color: (1, 1, 1, 1)
+                            font_style: "Body1"
+                            adaptive_height: True
+
+                        MDLabel:
+                            text: "Tommy Torfard"
+                            font_name: 'fonts/Belwe Italic.ttf'
+                            theme_text_color: "Custom"
+                            text_color: (1, 1, 1, 1)
+                            font_style: "Body1"
+                            adaptive_height: True
+
+                        MDLabel:
+                            text: "Dorian Thalor"
+                            font_name: 'fonts/Belwe Italic.ttf'
+                            theme_text_color: "Custom"
+                            text_color: (1, 1, 1, 1)
+                            font_style: "Body1"
+                            adaptive_height: True
+
+                        MDLabel:
+                            text: "Durgan lo Sdentato"
+                            font_name: 'fonts/Belwe Italic.ttf'
+                            theme_text_color: "Custom"
+                            text_color: (1, 1, 1, 1)
+                            font_style: "Body1"
+                            adaptive_height: True
+
+                        MDLabel:
+                            text: "Eldran Kheltorn"
+                            font_name: 'fonts/Belwe Italic.ttf'
+                            theme_text_color: "Custom"
+                            text_color: (1, 1, 1, 1)
+                            font_style: "Body1"
+                            adaptive_height: True
+
+                        MDLabel:
+                            text: "Tenente Ivan Blacksword"
+                            font_name: 'fonts/Belwe Italic.ttf'
+                            theme_text_color: "Custom"
+                            text_color: (1, 1, 1, 1)
+                            font_style: "Body1"
+                            adaptive_height: True
+
+                        MDLabel:
+                            text: "Xander Cael"
+                            font_name: 'fonts/Belwe Italic.ttf'
+                            theme_text_color: "Custom"
+                            text_color: (1, 1, 1, 1)
+                            font_style: "Body1"
+                            adaptive_height: True
+                        
+                        MDSeparator:
+
+                        MDLabel:
+                            text: "• Organizzazioni"
+                            font_name: 'fonts/Belwe Bold.otf'
+                            theme_text_color: "Custom"
+                            text_color: (1, 1, 1, 1)
+                            font_style: "Body1"
+                            adaptive_height: True
+
+                        MDLabel:
+                            text: "MOVIMENTO COLONIALISTA: Il movimento politico di maggioranza di Godbrick, con a capo Balin Torfard e Eldran Kheltorn. Tra ricchezza, borghesia ed espansione verso nord, il Movimento Colonialista è forse quello più concentrato sul profitto."
+                            font_name: 'fonts/BelweCondensedBT.ttf'
+                            theme_text_color: "Custom"
+                            text_color: (1, 1, 1, 1)
+                            font_style: "Body1"
+                            adaptive_height: True
+
+                        MDLabel:
+                            text: "FIGLI DELLA POLVERE NERA: Il movimento politico di Goldbrick con meno membri e meno appoggio, con a capo Dorian Thalor. Gli ideali dei Figli della Polvere Nera sono molto conservatori: quando c'era Carlyle era tutto migliore..."
+                            font_name: 'fonts/BelweCondensedBT.ttf'
+                            theme_text_color: "Custom"
+                            text_color: (1, 1, 1, 1)
+                            font_style: "Body1"
+                            adaptive_height: True
+
+                        MDLabel:
+                            text: "LUMI DI MYSTRA: Il movimento politico di Goldbrick che fa capo a Xander Cael e la componente più illuminista della popolazione. I Lumi di Mystra utilizzano il nome della dea come simbolo di sapienza e del loro legame con la magia. Non per niente, Xander Cael è il mago più conosciuto e potente di tutta Nuova Fost."
+                            font_name: 'fonts/BelweCondensedBT.ttf'
+                            theme_text_color: "Custom"
+                            text_color: (1, 1, 1, 1)
+                            font_style: "Body1"
+                            adaptive_height: True
+
+                        MDLabel:
+                            text: "LA GILDA DI DALIA: Dopo la Spirale, è la seconda organizzazione criminale più sviluppata, che si concentra soprattutto a Nuova Fost. Della Gilda di Dalia si sa poco e niente, solo che agisce come una sorta di mafia."
+                            font_name: 'fonts/BelweCondensedBT.ttf'
+                            theme_text_color: "Custom"
+                            text_color: (1, 1, 1, 1)
+                            font_style: "Body1"
+                            adaptive_height: True

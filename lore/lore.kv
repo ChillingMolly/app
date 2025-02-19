@@ -1,0 +1,59 @@
+<LoreScreen>:
+    name: "lore"
+
+    BoxLayout:
+        orientation: "vertical"
+        padding: "10dp"
+        spacing: "10dp"
+
+        MDTopAppBar:
+            title: "Lore"
+            elevation: 4
+            left_action_items: [["arrow-left", lambda x: app.change_screen("menu")]]
+
+        ScrollView:
+            MDList:
+                id: lore_list
+                
+                TwoLineAvatarListItem:
+                    text: "Il Mito della Nascita di Vingaldrum"
+                    secondary_text: 'Storia di Vingaldrum'
+                    on_release: app.change_screen("nascita_di_vingaldrum")
+                    ImageLeftWidget:
+                        source: "assets/nascita_di_vingaldrum.png"
+
+                TwoLineAvatarListItem:
+                    text: "Il Mito di Ethelindra e Tal'Noriel"
+                    secondary_text: 'Storia di Vingaldrum'
+                    on_release: app.change_screen("ethelindra_e_talnoriel")
+                    ImageLeftWidget:
+                        source: "assets/ethelindra_e_talnoriel.png"
+
+                TwoLineAvatarListItem:
+                    text: "La Leggenda di Kurk"
+                    secondary_text: 'Storia di Kurk'
+                    on_release: app.change_screen("leggenda_di_kurk")
+                    ImageLeftWidget:
+                        source: "assets/leggenda_di_kurk.png"
+
+                TwoLineAvatarListItem:
+                    text: "Le Dinastie di Kurk"
+                    secondary_text: 'Storia di Kurk'
+                    on_release: app.change_screen("dinastie_di_kurk")
+                    ImageLeftWidget:
+                        source: "assets/dinastie_di_kurk.png"
+
+                TwoLineAvatarListItem:
+                    text: "La Battaglia di Fost"
+                    secondary_text: 'Storia di Fost'
+                    on_release: app.change_screen("battaglia_di_fost")
+                    ImageLeftWidget:
+                        source: "assets/battaglia_di_fost.png"
+
+                TwoLineAvatarListItem:
+                    text: "La Genesi di Ishus"
+                    secondary_text: 'Storia di Isothar'
+                    on_release: app.change_screen("genesi_di_ishus")
+                    ImageLeftWidget:
+                        source: "assets/genesi_di_ishus.png"
+                

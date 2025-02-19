@@ -1,0 +1,97 @@
+<EthelindraETalNorielScreen>:
+    name: "ethelindra_e_talnoriel"
+
+    BoxLayout:
+        orientation: "vertical"
+        padding: "10dp"
+        spacing: "10dp"
+
+        MDTopAppBar:
+            title: "Il Mito di Ethelindra e Tal'Noriel"
+            elevation: 4
+            left_action_items: [["arrow-left", lambda x: app.change_screen("lore")]]
+
+        ScrollView:
+            MDBoxLayout:
+                orientation: 'vertical'
+                padding: "10dp"
+                spacing: "10dp"
+                size_hint_y: None 
+                height: self.minimum_height 
+                pos_hint: {"center_y": 0.5}
+
+                MDCard:
+                    size_hint: None, None
+                    size: "350dp", "280dp"
+                    pos_hint: {"center_x": 0.5, "center_y": 0.5}
+                    elevation: 6
+                    radius: [15, 15, 15, 15]
+                    md_bg_color: 0.1, 0.1, 0.1, 1
+                    adaptive_height: True
+
+                    MDBoxLayout:
+                        orientation: "vertical"
+                        padding: "15dp"
+                        spacing: "10dp"
+                        adaptive_height: True
+
+                        MDLabel:
+                            text: "L'Ascesa di Tal'Noriel"
+                            font_name: 'fonts/Belwe Bold.otf'
+                            theme_text_color: "Custom"
+                            text_color: 1, 0.75, 0, 1  # Colore dorato
+                            font_style: "H5"
+                            halign: "center"
+                            adaptive_height: True
+
+                        MDSeparator:
+                            
+                        MDLabel:
+                            text: "Tal'Noriel era un elfo di umili origini, nato tra le fronde più basse della grande città elfica, dove la nobiltà non si avventurava e la vita era scandita dal duro lavoro. Cresciuto tra le ombre degli alberi più antichi, sognava di elevarsi, di essere qualcosa di più che un semplice cittadino senza lignaggio. La sua intelligenza e il suo fascino non passarono inosservati, e con il tempo riuscì a entrare nelle grazie della corte come consigliere minore. Fu in questo mondo di eleganza e potere che conobbe Ethelindra, sorella del re Ethelindor. Ethelindra era una creatura di straordinaria bellezza e grazia, devota alla dea Thalindra, e il suo cuore si lasciò incantare da Tal'Noriel. Lui le parlava con parole dolci come miele, le sussurrava sogni di un futuro condiviso, e così, contro ogni aspettativa e opposizione, i due si unirono in matrimonio. Dalla loro unione nacque Lae'Noriel, il loro unico figlio, che divenne la luce della città e l'erede di una stirpe destinata a un futuro incerto."
+                            font_name: 'fonts/Belwe Italic.ttf'
+                            theme_text_color: "Custom"
+                            text_color: (1, 1, 1, 1)
+                            font_style: "Body1"
+                            adaptive_height: True
+
+                        MDSeparator:
+                            
+                        MDLabel:
+                            text: "L'Oscurità nel Cuore di Tal'Noriel"
+                            font_name: 'fonts/Belwe Bold.otf'
+                            theme_text_color: "Custom"
+                            text_color: 1, 0.75, 0, 1  # Colore dorato
+                            font_style: "H5"
+                            halign: "center"
+                            adaptive_height: True
+
+                        MDSeparator:
+                        
+                        MDLabel:
+                            text: "Ma nel cuore di Tal'Noriel cresceva un'ombra. Se l'amore per Ethelindra era reale, lo era anche la sua sete di potere. Guardava il re Ethelindor con invidia: perché un elfo nato tra le foglie basse doveva rimanere nell'ombra mentre altri, per diritto di nascita, sedevano sul trono? Così, avvelenato dall'ambizione, tramò in segreto per assassinare il re. In una notte senza luna, si introdusse nei Giardini Lunari del Palazzo di Ethelindor, dove il sovrano spesso si ritirava per meditare sotto l'ombra dell'Eterna Quercia. Armato di una lama intessuta di veleno silvano, Tal'Noriel attese nell'oscurità. Ma il fato aveva altri piani. Ethelindor non era solo. Gli spiriti della foresta, legati alla volontà di Thalindra, avevano percepito il tradimento e avvisarono il re. Quando Tal'Noriel sferrò il colpo, Ethelindor si voltò e affrontò il traditore. Il combattimento fu rapido e feroce, ma il re, colto di sorpresa, cadde sotto il veleno della lama."
+                            font_name: 'fonts/Belwe Italic.ttf'
+                            theme_text_color: "Custom"
+                            text_color: (1, 1, 1, 1)
+                            font_style: "Body1"
+                            adaptive_height: True
+
+                        MDSeparator:
+                            
+                        MDLabel:
+                            text: "Il Giudizio di Ethelindra"
+                            font_name: 'fonts/Belwe Bold.otf'
+                            theme_text_color: "Custom"
+                            text_color: 1, 0.75, 0, 1  # Colore dorato
+                            font_style: "H5"
+                            halign: "center"
+                            adaptive_height: True
+
+                        MDSeparator:
+                            
+                        MDLabel:
+                            text: "Il crimine non rimase nascosto a lungo. Le guardie reali trovarono Tal'Noriel accanto al corpo del re, la lama ancora macchiata di veleno. Traditore. Assassino. Parole che rimbalzarono tra le mura del palazzo come un'eco ineluttabile. Ethelindra, ora regina, si trovò di fronte alla più dolorosa delle scelte. L'amore per il marito si scontrava con il dovere verso il regno e il fratello defunto. La legge elfica era chiara: il tradimento si pagava con la morte. Ma Ethelindra non poté condannare a morte l'uomo che aveva amato, l'uomo che era padre di suo figlio. Invece, decretò che Tal'Noriel sarebbe stato imprigionato nelle segrete del Palazzo di Ethelindor, incatenato da rune magiche, incapace di sfuggire o di morire, condannato a un'esistenza di rimorso e solitudine."
+                            font_name: 'fonts/Belwe Italic.ttf'
+                            theme_text_color: "Custom"
+                            text_color: (1, 1, 1, 1)
+                            font_style: "Body1"
+                            adaptive_height: True

@@ -1,0 +1,47 @@
+ScreenManager:
+    MainMenu:
+
+<MainMenu>:
+    name: "menu"
+    BoxLayout:
+        orientation: "vertical"
+        
+        MDTopAppBar:
+            title: "Campagna D&D"
+            elevation: 4
+            padding: "10dp"
+            spacing: "10dp"
+
+        FitImage:
+            source: "assets/logo.png"
+        
+        MDBoxLayout:
+            orientation: "vertical"
+            spacing: "20dp"
+            padding: "20dp"
+            
+            MDRaisedButton:
+                text: "Mappa"
+                size_hint: 0.8, None
+                height: "50dp"
+                pos_hint: {"center_x": 0.5}
+                on_press: app.animate_button(self)
+                on_release: app.change_screen("map")
+            
+            MDRaisedButton:
+                text: "Personaggi"
+                size_hint: 0.8, None
+                height: "50dp"
+                pos_hint: {"center_x": 0.5}
+                on_press: app.animate_button(self)
+                on_release: app.change_screen("characters")
+
+            MDRaisedButton:
+                text: "Lore"
+                size_hint: 0.8, None
+                height: "50dp"
+                pos_hint: {"center_x": 0.5}
+                on_press: app.animate_button(self)
+                on_release: app.change_screen("lore")
+                
+

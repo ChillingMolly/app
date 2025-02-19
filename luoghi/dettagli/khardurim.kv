@@ -1,0 +1,109 @@
+<KharDurimScreen>:
+    name: "khardurim"
+
+    BoxLayout:
+        orientation: "vertical"
+        padding: "10dp"
+        spacing: "10dp"
+
+        MDTopAppBar:
+            title: "Khar Durim"
+            elevation: 4
+            left_action_items: [["arrow-left", lambda x: app.change_screen("map")]]
+
+        ScrollView:
+            MDBoxLayout:
+                orientation: 'vertical'
+                padding: "10dp"
+                spacing: "10dp"
+                size_hint_y: None 
+                height: self.minimum_height 
+                pos_hint: {"center_y": 0.5}
+
+                MDCard:
+                    size_hint: None, None
+                    size: "350dp", "280dp"
+                    pos_hint: {"center_x": 0.5, "center_y": 0.5}
+                    elevation: 6
+                    radius: [15, 15, 15, 15]
+                    md_bg_color: 0.1, 0.1, 0.1, 1
+                    adaptive_height: True
+
+                    MDBoxLayout:
+                        orientation: "vertical"
+                        padding: "15dp"
+                        spacing: "10dp"
+                        adaptive_height: True
+
+                        MDLabel:
+                            text: "La Città di Thorgrim"
+                            font_name: 'fonts/Belwe Bold.otf'
+                            theme_text_color: "Custom"
+                            text_color: 1, 0.75, 0, 1  # Colore dorato
+                            font_style: "H5"
+                            halign: "center"
+                            adaptive_height: True
+
+                        MDSeparator:
+                    
+                        MDLabel:
+                            text: "• Descrizione"
+                            font_name: 'fonts/Belwe Bold.otf'
+                            theme_text_color: "Custom"
+                            text_color: (1, 1, 1, 1)
+                            font_style: "Body1"
+                            adaptive_height: True
+
+                            
+                        MDLabel:
+                            text: "Khar Durim nasce come complesso di caverne all'interno di una collina, che ospitano le case dei nani. Khar Durim è passata alla storia anche col nome di Thorgrim, dall'omonimo Re. Essa è una città molto riservata: solamente chi sa la parola d'ordine può accedere agli ambienti cavernosi interni alla collina, e dunque alla città vera e propria. Khar Durim è conosciuta soprattutto per la sua produzione di armamenti molto sofisticati e ben costruiti da parte dei nani. Si dice che la pietra di Mithrarovan, posta al centro della Forgia, alimenti e potenzi a dismisura il lavoro dei fabbri. Da poco si è scoperto che i nani producono anche il Mithral, raro e potentissimo minerale, che hanno utilizzato per costruire armature ed armi per ogni nano. Non si sa bene da dove prendano il Mithral, ma si vocifera che ci sia un antico giacimento nei tunnel più sotterranei di Khar Durim, motivo per il quale la città è stata anticamente costruita in quella collina. Nemmeno della sua fondazione si sa qualcosa: la storia dei nani è conservata gelosamente dagli abitanti di Khar Durim."
+                            font_name: 'fonts/Belwe Italic.ttf'
+                            theme_text_color: "Custom"
+                            text_color: (1, 1, 1, 1)
+                            font_style: "Body1"
+                            adaptive_height: True
+
+                        MDSeparator:
+
+                        MDLabel:
+                            text: "• Luoghi di interesse"
+                            theme_text_color: "Custom"
+                            text_color: (1, 1, 1, 1)
+                            font_name: 'fonts/Belwe Bold.otf'
+                            font_style: "Body1"
+                            adaptive_height: True
+
+                        MDLabel:
+                            text: "SALA DEL TRONO: L'enorme sala che ospita il trono di Thorgrim. Ha una platea ed una balconata."
+                            font_name: 'fonts/Belwe Italic.ttf'
+                            theme_text_color: "Custom"
+                            text_color: (1, 1, 1, 1)
+                            font_style: "Body1"
+                            adaptive_height: True
+
+                        MDLabel:
+                            text: "LA FORGIA: Un complesso di enormi caverne sferiche collegate tra loro da piccoli corridoi. Ognuna di esse ha innumerevoli alcove in cui i fabbri lavorano i loro minerali. Al centro della caverna centrale è posizionato il pilastro di pietra che sorregge la pietra di Mitrharovan."
+                            font_name: 'fonts/Belwe Italic.ttf'
+                            theme_text_color: "Custom"
+                            text_color: (1, 1, 1, 1)
+                            font_style: "Body1"
+                            adaptive_height: True
+
+                        MDSeparator:
+
+                        MDLabel:
+                            text: "• Personaggi collegati"
+                            font_name: 'fonts/Belwe Bold.otf'
+                            theme_text_color: "Custom"
+                            text_color: (1, 1, 1, 1)
+                            font_style: "Body1"
+                            adaptive_height: True
+                            
+                        MDLabel:
+                            text: "Re Thorgrim"
+                            font_name: 'fonts/Belwe Italic.ttf'
+                            theme_text_color: "Custom"
+                            text_color: (1, 1, 1, 1)
+                            font_style: "Body1"
+                            adaptive_height: True
+

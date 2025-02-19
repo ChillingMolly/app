@@ -1,0 +1,57 @@
+<GenesiDiIshusScreen>:
+    name: "genesi_di_ishus"
+
+    BoxLayout:
+        orientation: "vertical"
+        padding: "10dp"
+        spacing: "10dp"
+
+        MDTopAppBar:
+            title: "La Genesi di Ishus"
+            elevation: 4
+            left_action_items: [["arrow-left", lambda x: app.change_screen("lore")]]
+
+        ScrollView:
+            MDBoxLayout:
+                orientation: 'vertical'
+                padding: "10dp"
+                spacing: "10dp"
+                size_hint_y: None 
+                height: self.minimum_height 
+                pos_hint: {"center_y": 0.5}
+
+                MDCard:
+                    size_hint: None, None
+                    size: "350dp", "280dp"
+                    pos_hint: {"center_x": 0.5, "center_y": 0.5}
+                    elevation: 6
+                    radius: [15, 15, 15, 15]
+                    md_bg_color: 0.1, 0.1, 0.1, 1
+                    adaptive_height: True
+
+                    MDBoxLayout:
+                        orientation: "vertical"
+                        padding: "15dp"
+                        spacing: "10dp"
+                        adaptive_height: True
+
+                        MDLabel:
+                            text: "La Genesi del Dio dei Segreti"
+                            font_name: 'fonts/Belwe Bold.otf'
+                            theme_text_color: "Custom"
+                            text_color: (1, 0.75, 0, 1)  # Colore dorato
+                            font_style: "H5"
+                            halign: "center"
+                            adaptive_height: True
+
+                        MDSeparator:
+                            
+                        MDLabel:
+                            text: "Nel tempo antico, quando gli dei camminavano ancora tra i mortali e il destino del mondo era scritto nelle sabbie del fato, vi era un uomo di nome Ishus. Egli non era né re né guerriero, né mago né profeta. Era un semplice studioso, un cercatore di verità, la cui mente bramava la conoscenza più di ogni altra cosa. Attraverso anni di viaggi e studi, Ishus scoprì le tracce di un segreto proibito, una verità antica nascosta agli occhi degli uomini e degli dei. Un segreto così grande che, se rivelato, avrebbe scosso le fondamenta stesse dell'esistenza. Egli lo apprese nelle profondità di una caverna dimenticata, incise le parole su una pergamena silenziosa e comprese che la sua mente mortale non avrebbe potuto contenere tale peso senza soccombere. Gli dei stessi tentarono di fermarlo. Mandarono i loro emissari, gli avvertirono del pericolo, gli offrirono potere e ricchezze affinché rinunciasse alla sua ricerca. Ma Ishus rifiutò. Non per ambizione, ma perché ormai era troppo tardi: il segreto lo aveva toccato, lo aveva reso parte della sua essenza. Se lo avesse condiviso, il mondo sarebbe crollato; se lo avesse custodito, egli stesso sarebbe stato consumato dalla verità. Fu allora che Ishus compì l'atto definitivo di sacrificio. Con un rituale mai tentato prima, rinunciò alla sua forma mortale, alla sua stessa esistenza, e divenne il custode eterno del segreto. Si dissolse nella trama del cosmo, trasformandosi in un'ombra silenziosa tra gli dei. Non governò sui cieli, né reclamò fedeli con il fuoco e la spada. Egli divenne il Dio dei Segreti, colui che tutto conosce e nulla svela, il signore delle verità celate e delle parole mai pronunciate. Da allora, coloro che cercano la conoscenza proibita invocano il suo nome e offrono sacrifici nel silenzio, poiché sanno che ogni segreto ha un prezzo. I suoi devoti indossano maschere per ricordare il sacrificio del loro dio, nascondendo i loro volti così come Ishus nascose la verità. Così nacque il Dio dei Segreti, il custode dell'ignoto, la voce sussurrata nelle tenebre. Il suo nome è un mistero e la sua esistenza è un enigma, ma coloro che osano avvicinarsi alla verità sanno che lui è sempre in ascolto."
+                            font_name: 'fonts/Belwe Italic.ttf'
+                            theme_text_color: "Custom"
+                            text_color: (1, 1, 1, 1)
+                            font_style: "Body1"
+                            adaptive_height: True
+
+                      

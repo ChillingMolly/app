@@ -1,0 +1,98 @@
+<LeggendaDiKurkScreen>:
+    name: "leggenda_di_kurk"
+
+    BoxLayout:
+        orientation: "vertical"
+        padding: "10dp"
+        spacing: "10dp"
+
+        MDTopAppBar:
+            title: "La Leggenda di Kurk"
+            elevation: 4
+            left_action_items: [["arrow-left", lambda x: app.change_screen("lore")]]
+
+        ScrollView:
+            MDBoxLayout:
+                orientation: 'vertical'
+                padding: "10dp"
+                spacing: "10dp"
+                size_hint_y: None 
+                height: self.minimum_height 
+                pos_hint: {"center_y": 0.5}
+
+                MDCard:
+                    size_hint: None, None
+                    size: "350dp", "280dp"
+                    pos_hint: {"center_x": 0.5, "center_y": 0.5}
+                    elevation: 6
+                    radius: [15, 15, 15, 15]
+                    md_bg_color: 0.1, 0.1, 0.1, 1
+                    adaptive_height: True
+
+                    MDBoxLayout:
+                        orientation: "vertical"
+                        padding: "15dp"
+                        spacing: "10dp"
+                        adaptive_height: True
+
+                        MDSeparator:
+                            
+                        MDLabel:
+                            text: "Molto tempo fa, prima che il Bosco di Sangue fosse così chiamato, la regione era una foresta rigogliosa ma ordinaria, abitata da tribù elfiche e umane in armonia con la natura. Al centro della foresta si trovava un albero colossale, noto come Kurkhael, che si diceva fosse il cuore pulsante della vita nel bosco. Le sue radici affondavano profondamente nella terra, toccando una fonte magica antica chiamata il Sangue della Terra, un potere primordiale capace di dare vita e distruzione."
+                            font_name: 'fonts/Belwe Italic.ttf'
+                            theme_text_color: "Custom"
+                            text_color: (1, 1, 1, 1)
+                            font_style: "Body1"
+                            adaptive_height: True
+
+                        MDSeparator:
+                            
+                        MDLabel:
+                            text: "L'Arrivo degli Usurpatori"
+                            font_name: 'fonts/Belwe Bold.otf'
+                            theme_text_color: "Custom"
+                            text_color: 1, 0.75, 0, 1  # Colore dorato
+                            font_style: "H5"
+                            halign: "center"
+                            adaptive_height: True
+
+                        MDSeparator:
+                        
+                        MDLabel:
+                            text: "La pace fu infranta quando un'orda di invasori, guidata da un signore della guerra conosciuto come Rathmor il Profanatore, penetrò nella foresta. Rathmor era ossessionato dalla leggenda del Kurkhael e desiderava il potere del Sangue della Terra per diventare un dio. Ovunque passava, il suo esercito lasciava distruzione: alberi abbattuti, villaggi rasi al suolo, e antiche creature cacciate senza pietà. Quando Rathmor raggiunse il Kurkhael, iniziò un rituale per assorbire il Sangue della Terra, ma sottovalutò il potere dell'albero. L'energia liberata dal rituale fu incontrollabile, trasformando la foresta. Le foglie degli alberi vicini si tinsero di un rosso profondo, come macchiate dal sangue, e l'intera regione divenne un luogo intriso di magia selvaggia e imprevedibile."
+                            font_name: 'fonts/Belwe Italic.ttf'
+                            theme_text_color: "Custom"
+                            text_color: (1, 1, 1, 1)
+                            font_style: "Body1"
+                            adaptive_height: True
+
+                        MDSeparator:
+                            
+                        MDLabel:
+                            text: "La Fondazione della Fortezza"
+                            font_name: 'fonts/Belwe Bold.otf'
+                            theme_text_color: "Custom"
+                            text_color: 1, 0.75, 0, 1  # Colore dorato
+                            font_style: "H5"
+                            halign: "center"
+                            adaptive_height: True
+
+                        MDSeparator:
+                            
+                        MDLabel:
+                            text: "Gli elfi e gli umani sopravvissuti, guidati da una giovane druida chiamata Eryndra la Custode, si unirono per fermare Rathmor. Comprendendo che l'unico modo per contenere il potere del Sangue della Terra era custodirlo, decisero di costruire una fortezza attorno al Kurkhael. La costruzione della fortezza fu un'impresa che unì magia e abilità artigianale. Gli elfi evocarono l'energia della foresta, mentre i nani forgiarono la pietra nera, l'Obsidarite, direttamente dalle radici del Kurkhael. La fortezza fu eretta in meno di un anno, un tempo incredibilmente breve per un'opera così monumentale, grazie all'aiuto degli spiriti della foresta. Quando la fortezza fu completata, Eryndra compì l'ultimo gesto per sigillare il potere del Kurkhael. Offrì la propria vita al Sangue della Terra, fondendo la sua anima con l'albero e trasformandolo in un guardiano eterno. Da quel giorno, il Kurkhael divenne il cuore magico della fortezza e della foresta."
+                            font_name: 'fonts/Belwe Italic.ttf'
+                            theme_text_color: "Custom"
+                            text_color: (1, 1, 1, 1)
+                            font_style: "Body1"
+                            adaptive_height: True
+
+                        MDSeparator:
+                                
+                        MDLabel:
+                            text: "Altro è ancora da scoprire..."
+                            font_name: 'fonts/BelweCondensedBT.ttf'
+                            theme_text_color: "Custom"
+                            text_color: (1, 1, 1, 1)
+                            font_style: "Body1"
+                            adaptive_height: True
